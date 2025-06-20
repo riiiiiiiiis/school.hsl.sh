@@ -5,22 +5,22 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="font-semibold text-2xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Hashslash
+              hsl.sh
             </a>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#courses" className="text-apple-gray hover:text-apple-black transition-colors">
-              Курсы
+              Программы 
             </a>
             <a href="#about" className="text-apple-gray hover:text-apple-black transition-colors">
-              О школе
+              О нас
             </a>
             <a href="#contact" className="text-apple-gray hover:text-apple-black transition-colors">
-              Контакты
+              Связь
             </a>
             <a href="#courses" className="bg-apple-blue text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors">
-              Выбрать курс
+              Начать создавать
             </a>
           </div>
           

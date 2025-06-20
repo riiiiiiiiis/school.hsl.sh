@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js 15.3.3 landing page for "Вайб-кодинг с AI" (Vibe-coding with AI), a Russian-language course teaching web development using AI tools. The site uses React 19, Tailwind CSS v4, and is built with the App Router pattern.
+This is a Next.js 15.3.3 school website for "Школа Hashslash" (Hashslash School), offering Russian-language courses in modern development with AI tools. The site features multiple course routes and uses React 19, Tailwind CSS v4, and is built with the App Router pattern.
 
 ## Common Commands
 
@@ -35,7 +35,12 @@ Note: No testing framework is currently configured.
 
 ### Key Architectural Decisions
 
-1. **Tailwind CSS v4 Configuration**: Custom theme variables are defined in `app/globals.css` using CSS custom properties:
+1. **Multi-Route Structure**: The school website has dedicated routes for different courses:
+   - `/` - Main school homepage with course overview
+   - `/ai` - AI Tools course landing page
+   - `/vibecoding` - Vibe-coding course landing page
+
+2. **Tailwind CSS v4 Configuration**: Custom theme variables are defined in `app/globals.css` using CSS custom properties:
    ```css
    @theme {
      --color-apple-black: #1d1d1f;
@@ -46,30 +51,60 @@ Note: No testing framework is currently configured.
    }
    ```
 
-2. **Component Structure**: All components are in `/app/components/`. The `Program.jsx` and `FAQ.jsx` components are client components that use the shared `AccordionItem.jsx` for interactivity.
+3. **Component Structure**: All components are in `/app/components/`. Components are organized by:
+   - `/app/components/` - Shared components (Navbar, Footer, AccordionItem, Instructor)
+   - `/app/components/school/` - School homepage specific components
+   - `/app/components/vibecoding/` - Vibecoding course specific components
 
-3. **SEO & Metadata**: Comprehensive metadata including structured data (JSON-LD) for course information is configured in `app/layout.js`.
+4. **SEO & Metadata**: Comprehensive metadata including structured data (JSON-LD) for course information is configured in `app/layout.js`. Each course page has its own metadata export.
 
 ### Project-Specific Context
 
-- The site is a single-page application with smooth scroll navigation between sections
+- The site is a multi-page school website with separate course landing pages
 - All text content is in Russian
 - The design follows Apple's design language (fonts, colors, spacing)
-- Three pricing tiers: Вуайерист (2,990₽), Вайбкодер (11,991₽), Визионер (23,992₽)
-- Course starts May 30th, runs for 3 weeks with 3 practical lectures
+- Shared instructor component (Sergey Ris) across all course pages
+- Two main courses:
+  - **AI Tools**: 4-week course, pricing from 9,990₽
+  - **Vibecoding**: 3-week course, pricing from 2,990₽ (three tiers: Вуайерист 2,990₽, Вайбкодер 11,991₽, Визионер 23,992₽)
 
-### Component Hierarchy
+### Course Pages Structure
 
+#### Main School Page (`/`)
 ```
 page.js
 ├── Navbar (fixed navigation)
 ├── main
-│   ├── Hero (gradient background)
-│   ├── About (course timing info)
-│   ├── Program (3 modules with accordions)
-│   ├── Pricing (3 tiers)
-│   ├── Audience (target groups)
-│   ├── FAQ (common questions)
-│   └── CTA (Telegram bot signup)
+│   ├── SchoolHero (school branding)
+│   └── ProductCards (course overview cards)
 └── Footer (links and navigation)
+```
+
+#### AI Tools Page (`/ai`)
+```
+page.js
+├── Navbar
+├── main
+│   ├── Hero (AI Tools branding)
+│   ├── Course sections
+│   └── Instructor (shared component)
+└── Footer
+```
+
+#### Vibecoding Page (`/vibecoding`)
+```
+page.js
+├── Navbar
+├── main
+│   ├── Hero (Vibecoding branding)
+│   ├── VibeCodingIntro
+│   ├── Instructor (shared component)
+│   ├── LeadMagnet
+│   ├── CourseProjects
+│   ├── Testimonials
+│   ├── Program (with accordions)
+│   ├── StudentProjects
+│   ├── Pricing (3 tiers)
+│   └── CTA (Telegram bot signup)
+└── Footer
 ```

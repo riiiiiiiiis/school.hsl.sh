@@ -183,7 +183,7 @@ export default function VibeCodingPage() {
       {/* Program Section - Interactive */}
       <ProgramSection />
 
-      {/* Student Projects */}
+      {/* Student Projects
       <section className="py-20 bg-apple-light-gray">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-center text-5xl font-semibold mb-16">Реальные проекты наших учеников</h2>
@@ -233,7 +233,7 @@ export default function VibeCodingPage() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing */}
       <section id="pricing" className="py-24 bg-white">

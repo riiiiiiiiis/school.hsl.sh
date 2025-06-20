@@ -1,3 +1,5 @@
+import { courses } from "../data/courses";
+
 export default function Footer() {
   return (
     <footer className="bg-apple-black text-white py-16">
@@ -8,24 +10,20 @@ export default function Footer() {
               Школа Hashslash
             </h3>
             <p className="text-apple-gray text-lg mb-6 max-w-md">
-              Обучаем современной разработке с использованием искусственного интеллекта. 
-              Практические курсы для новичков и профессионалов.
+            Усиливаем человека с помощью нейросетей. Присоединяйся.
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold text-lg mb-4">Курсы</h4>
+            <h4 className="font-semibold text-lg mb-4">Программы</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="/ai" className="text-apple-gray hover:text-white transition-colors">
-                  AI Tools
-                </a>
-              </li>
-              <li>
-                <a href="/vibecoding" className="text-apple-gray hover:text-white transition-colors">
-                  Вайб-кодинг
-                </a>
-              </li>
+              {courses.map(({ href, title }) => (
+                <li key={href}>
+                  <a href={href} className="text-apple-gray hover:text-white transition-colors">
+                    {title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           
@@ -34,12 +32,12 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="https://t.me/hashslash" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  Telegram
+                Наш телеграм
                 </a>
               </li>
               <li>
                 <a href="mailto:hello@hsl.sh" className="text-apple-gray hover:text-white transition-colors">
-                  Email
+                Написать на почту
                 </a>
               </li>
             </ul>
@@ -48,7 +46,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-apple-gray text-sm">
-            © 2024 Школа Hashslash. Все права защищены.
+            © 2025 Школа Hashslash. Все права защищены.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="/privacy" className="text-apple-gray hover:text-white text-sm transition-colors">
