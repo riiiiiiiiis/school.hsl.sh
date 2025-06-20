@@ -40,5 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-repomix-output/
-repomix-output.xmlrepomix-output.xml
+repomix-output.xml
