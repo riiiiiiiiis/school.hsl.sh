@@ -17,12 +17,12 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Курсы</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://ai.hsl.sh" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="/ai" className="text-apple-gray hover:text-white transition-colors">
                   AI Tools
                 </a>
               </li>
               <li>
-                <a href="https://vibecoding.hsl.sh" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="/vibecoding" className="text-apple-gray hover:text-white transition-colors">
                   Вайб-кодинг
                 </a>
               </li>

@@ -1,18 +1,12 @@
 // app/page.js
-import Navbar from './components/Navbar';
-import SchoolHero from './components/SchoolHero';
-import ProductCards from './components/ProductCards';
-import Footer from './components/Footer';
+import SchoolHero from './components/school/SchoolHero';
+import ProductCards from './components/school/ProductCards';
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
-        <SchoolHero />
-        <ProductCards />
-      </main>
-      <Footer />
+      <SchoolHero />
+      <ProductCards />
     </>
   );
 }

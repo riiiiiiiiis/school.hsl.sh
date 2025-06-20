@@ -4,7 +4,7 @@ export default function ProductCards() {
       title: "AI Tools",
       subtitle: "Мастер-класс по инструментам AI",
       description: "Освойте современные инструменты искусственного интеллекта для эффективной разработки. ChatGPT, Claude, Midjourney и другие AI-сервисы.",
-      href: "https://ai.hsl.sh",
+      href: "/ai",
       color: "from-purple-600 to-blue-600",
       features: [
         "Практические примеры использования AI",
@@ -18,7 +18,7 @@ export default function ProductCards() {
       title: "Вайб-кодинг",
       subtitle: "Создавай без кода с AI",
       description: "Научись создавать сайты и Telegram-ботов в чате с нейросетью. Даже если никогда не писал код!",
-      href: "https://vibecoding.hsl.sh",
+      href: "/vibecoding",
       color: "from-blue-600 to-cyan-600",
       features: [
         "Создание сайтов через чат",
@@ -78,8 +78,6 @@ export default function ProductCards() {
               <a
                 href={course.href}
                 className="block w-full text-center bg-apple-blue text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Подробнее о курсе
               </a>

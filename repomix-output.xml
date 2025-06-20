@@ -41,12 +41,18 @@ The content is organized as follows:
 
 <directory_structure>
 app/
+  ai/
+    page.js
   components/
-    AccordionItem.jsx
-    Footer.jsx
-    Navbar.jsx
-    ProductCards.jsx
-    SchoolHero.jsx
+    school/
+      ProductCards.jsx
+      SchoolHero.jsx
+    shared/
+      AccordionItem.jsx
+      Footer.jsx
+      Navbar.jsx
+  vibecoding/
+    page.js
   globals.css
   layout.js
   page.js
@@ -62,14 +68,109 @@ README.md
 <files>
 This section contains the contents of the repository's files.
 
-<file path="app/components/ProductCards.jsx">
+<file path="app/ai/page.js">
+// app/ai/page.js
+export const metadata = {
+  title: "AI Tools: Мастер-класс по инструментам AI | Школа Hashslash",
+  description: "Освойте современные инструменты искусственного интеллекта для эффективной разработки. ChatGPT, Claude, Midjourney и другие AI-сервисы.",
+};
+
+export default function AIPage() {
+  return (
+    <div className="pt-16">
+      <section className="py-20 bg-gradient-to-b from-purple-50 to-blue-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-5xl md:text-6xl font-semibold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            AI Tools
+          </h1>
+          <p className="text-xl md:text-2xl text-apple-gray mb-8 max-w-3xl mx-auto">
+            Мастер-класс по инструментам искусственного интеллекта
+          </p>
+          <p className="text-lg text-apple-gray mb-10 max-w-2xl mx-auto">
+            Освойте современные инструменты искусственного интеллекта для эффективной разработки. 
+            ChatGPT, Claude, Midjourney и другие AI-сервисы.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="text-purple-600 mb-4">
+                <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 11.707-6.364l-.707-.707" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Практические примеры</h3>
+              <p className="text-apple-gray text-sm">Реальные кейсы использования AI в разработке</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="text-blue-600 mb-4">
+                <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Интеграция в workflow</h3>
+              <p className="text-apple-gray text-sm">Встраивание AI в ваш рабочий процесс</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="text-cyan-600 mb-4">
+                <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Промпт-инжиниринг</h3>
+              <p className="text-apple-gray text-sm">Искусство создания эффективных запросов</p>
+            </div>
+          </div>
+          
+          <div className="bg-white p-8 rounded-2xl shadow-sm max-w-md mx-auto">
+            <div className="text-center mb-6">
+              <div className="text-3xl font-bold text-apple-black mb-2">от 9,990₽</div>
+              <div className="text-apple-gray">4 недели обучения</div>
+            </div>
+            <a href="https://t.me/hashslash" className="block w-full bg-apple-blue text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors text-center">
+              Записаться на курс
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="program" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-semibold text-center mb-12">Программа курса</h2>
+          <div className="space-y-8">
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Неделя 1: Основы AI</h3>
+              <p className="text-apple-gray">Знакомство с основными AI-инструментами и их возможностями</p>
+            </div>
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Неделя 2: ChatGPT и Claude</h3>
+              <p className="text-apple-gray">Глубокое изучение текстовых AI-моделей</p>
+            </div>
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Неделя 3: Визуальные AI</h3>
+              <p className="text-apple-gray">Midjourney, DALL-E и другие инструменты для работы с изображениями</p>
+            </div>
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Неделя 4: Практика</h3>
+              <p className="text-apple-gray">Создание реальных проектов с использованием AI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+</file>
+
+<file path="app/components/school/ProductCards.jsx">
 export default function ProductCards() {
   const courses = [
     {
       title: "AI Tools",
       subtitle: "Мастер-класс по инструментам AI",
       description: "Освойте современные инструменты искусственного интеллекта для эффективной разработки. ChatGPT, Claude, Midjourney и другие AI-сервисы.",
-      href: "https://ai.hsl.sh",
+      href: "/ai",
       color: "from-purple-600 to-blue-600",
       features: [
         "Практические примеры использования AI",
@@ -83,7 +184,7 @@ export default function ProductCards() {
       title: "Вайб-кодинг",
       subtitle: "Создавай без кода с AI",
       description: "Научись создавать сайты и Telegram-ботов в чате с нейросетью. Даже если никогда не писал код!",
-      href: "https://vibecoding.hsl.sh",
+      href: "/vibecoding",
       color: "from-blue-600 to-cyan-600",
       features: [
         "Создание сайтов через чат",
@@ -143,8 +244,6 @@ export default function ProductCards() {
               <a
                 href={course.href}
                 className="block w-full text-center bg-apple-blue text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Подробнее о курсе
               </a>
@@ -157,7 +256,7 @@ export default function ProductCards() {
 }
 </file>
 
-<file path="app/components/SchoolHero.jsx">
+<file path="app/components/school/SchoolHero.jsx">
 export default function SchoolHero() {
   return (
     <section className="pt-32 pb-20 text-center bg-gradient-to-b from-white to-apple-light-gray">
@@ -173,6 +272,260 @@ export default function SchoolHero() {
         </a>
       </div>
     </section>
+  );
+}
+</file>
+
+<file path="app/components/shared/AccordionItem.jsx">
+'use client';
+
+export default function AccordionItem({ title, children, isOpen, onClick }) {
+  return (
+    <div className="border-b border-gray-200 pb-6">
+      <div 
+        className="flex justify-between items-center cursor-pointer py-4 hover:text-apple-blue transition-colors" 
+        onClick={onClick}
+      >
+        <h3 className="text-xl md:text-2xl font-medium">{title}</h3>
+        <span 
+          className="text-2xl text-apple-gray transition-transform duration-300" 
+          style={{ transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)' }}
+        >
+          +
+        </span>
+      </div>
+      <div 
+        className="overflow-hidden transition-all duration-300"
+        style={{ maxHeight: isOpen ? '1000px' : '0' }}
+      >
+        <div className="pt-4 text-apple-gray leading-relaxed">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="app/components/shared/Footer.jsx">
+export default function Footer() {
+  return (
+    <footer className="bg-apple-black text-white py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div className="md:col-span-2">
+            <h3 className="font-semibold text-2xl mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              Школа Hashslash
+            </h3>
+            <p className="text-apple-gray text-lg mb-6 max-w-md">
+              Обучаем современной разработке с использованием искусственного интеллекта. 
+              Практические курсы для новичков и профессионалов.
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Курсы</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/ai" className="text-apple-gray hover:text-white transition-colors">
+                  AI Tools
+                </a>
+              </li>
+              <li>
+                <a href="/vibecoding" className="text-apple-gray hover:text-white transition-colors">
+                  Вайб-кодинг
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Контакты</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://t.me/hashslash" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  Telegram
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@hsl.sh" className="text-apple-gray hover:text-white transition-colors">
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-apple-gray text-sm">
+            © 2024 Школа Hashslash. Все права защищены.
+          </p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="/privacy" className="text-apple-gray hover:text-white text-sm transition-colors">
+              Политика конфиденциальности
+            </a>
+            <a href="/terms" className="text-apple-gray hover:text-white text-sm transition-colors">
+              Условия использования
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+</file>
+
+<file path="app/components/shared/Navbar.jsx">
+export default function Navbar() {
+  return (
+    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <a href="/" className="font-semibold text-2xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Hashslash
+            </a>
+          </div>
+          
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#courses" className="text-apple-gray hover:text-apple-black transition-colors">
+              Курсы
+            </a>
+            <a href="#about" className="text-apple-gray hover:text-apple-black transition-colors">
+              О школе
+            </a>
+            <a href="#contact" className="text-apple-gray hover:text-apple-black transition-colors">
+              Контакты
+            </a>
+            <a href="#courses" className="bg-apple-blue text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors">
+              Выбрать курс
+            </a>
+          </div>
+          
+          <div className="md:hidden">
+            <button className="text-apple-gray hover:text-apple-black">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
+</file>
+
+<file path="app/vibecoding/page.js">
+// app/vibecoding/page.js
+export const metadata = {
+  title: "Вайб-кодинг с AI: Создавай сайты и Telegram-ботов в чате с ИИ | Сережа Рис",
+  description: "Научись создавать сайты и Telegram-ботов через чат с AI. Практический интенсив от Сережи Риса для начинающих. Получи бесплатный гайд и начни кодить уже сегодня!",
+};
+
+export default function VibeCodingPage() {
+  return (
+    <div className="pt-16">
+      <section className="py-20 bg-gradient-to-b from-blue-50 to-cyan-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-5xl md:text-6xl font-semibold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            Вайб-кодинг с AI
+          </h1>
+          <p className="text-xl md:text-2xl text-apple-gray mb-8 max-w-3xl mx-auto">
+            Создавай без кода с AI
+          </p>
+          <p className="text-lg text-apple-gray mb-10 max-w-2xl mx-auto">
+            Научись создавать сайты и Telegram-ботов в чате с нейросетью. 
+            Даже если никогда не писал код!
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="text-blue-600 mb-4">
+                <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Создание сайтов</h3>
+              <p className="text-apple-gray text-sm">Через чат с AI без написания кода</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="text-cyan-600 mb-4">
+                <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Telegram-боты</h3>
+              <p className="text-apple-gray text-sm">Автоматизация и интерактивные помощники</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="text-purple-600 mb-4">
+                <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Деплой проектов</h3>
+              <p className="text-apple-gray text-sm">Публикация в интернете за минуты</p>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+            <div className="bg-white p-6 rounded-2xl shadow-sm flex-1">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-apple-black mb-2">от 2,990₽</div>
+                <div className="text-apple-gray text-sm mb-4">3 недели</div>
+                <a href="https://t.me/vibecoding_bot" className="block w-full bg-apple-blue text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors text-sm">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-6 rounded-2xl text-white flex-1">
+              <div className="text-center">
+                <div className="text-lg font-semibold mb-2">Бесплатный гайд</div>
+                <div className="text-sm opacity-90 mb-4">Основы вайб-кодинга</div>
+                <a href="https://t.me/vibecoding_bot" className="block w-full bg-white/20 backdrop-blur text-white px-4 py-2 rounded-full hover:bg-white/30 transition-colors text-sm">
+                  Получить
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="program" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-semibold text-center mb-12">Программа курса</h2>
+          <div className="space-y-8">
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Модуль 1: Основы вайб-кодинга</h3>
+              <p className="text-apple-gray">Знакомство с концепцией создания проектов через чат с AI</p>
+            </div>
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Модуль 2: Создание сайтов</h3>
+              <p className="text-apple-gray">Практика создания лендингов и многостраничных сайтов</p>
+            </div>
+            <div className="bg-apple-light-gray p-8 rounded-2xl">
+              <h3 className="text-2xl font-semibold mb-4">Модуль 3: Telegram-боты</h3>
+              <p className="text-apple-gray">Разработка интерактивных ботов для автоматизации задач</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-semibold mb-8">Готов начать вайб-кодить?</h2>
+          <p className="text-xl mb-8 opacity-90">
+            Присоединяйся к сообществу создателей, которые используют AI для воплощения идей в жизнь
+          </p>
+          <a href="https://t.me/vibecoding_bot" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
+            Начать обучение
+          </a>
+        </div>
+      </section>
+    </div>
   );
 }
 </file>
@@ -342,146 +695,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 </file>
 
-<file path="app/components/AccordionItem.jsx">
-'use client';
-
-export default function AccordionItem({ title, children, isOpen, onClick }) {
-  return (
-    <div className="border-b border-gray-200 pb-6">
-      <div 
-        className="flex justify-between items-center cursor-pointer py-4 hover:text-apple-blue transition-colors" 
-        onClick={onClick}
-      >
-        <h3 className="text-xl md:text-2xl font-medium">{title}</h3>
-        <span 
-          className="text-2xl text-apple-gray transition-transform duration-300" 
-          style={{ transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)' }}
-        >
-          +
-        </span>
-      </div>
-      <div 
-        className="overflow-hidden transition-all duration-300"
-        style={{ maxHeight: isOpen ? '1000px' : '0' }}
-      >
-        <div className="pt-4 text-apple-gray leading-relaxed">
-          {children}
-        </div>
-      </div>
-    </div>
-  );
-}
-</file>
-
-<file path="app/components/Footer.jsx">
-export default function Footer() {
-  return (
-    <footer className="bg-apple-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
-            <h3 className="font-semibold text-2xl mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Школа Hashslash
-            </h3>
-            <p className="text-apple-gray text-lg mb-6 max-w-md">
-              Обучаем современной разработке с использованием искусственного интеллекта. 
-              Практические курсы для новичков и профессионалов.
-            </p>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Курсы</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="https://ai.hsl.sh" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  AI Tools
-                </a>
-              </li>
-              <li>
-                <a href="https://vibecoding.hsl.sh" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  Вайб-кодинг
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Контакты</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="https://t.me/hashslash" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  Telegram
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hello@hsl.sh" className="text-apple-gray hover:text-white transition-colors">
-                  Email
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-apple-gray text-sm">
-            © 2024 Школа Hashslash. Все права защищены.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/privacy" className="text-apple-gray hover:text-white text-sm transition-colors">
-              Политика конфиденциальности
-            </a>
-            <a href="/terms" className="text-apple-gray hover:text-white text-sm transition-colors">
-              Условия использования
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
-</file>
-
-<file path="app/components/Navbar.jsx">
-export default function Navbar() {
-  return (
-    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <a href="/" className="font-semibold text-2xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Hashslash
-            </a>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#courses" className="text-apple-gray hover:text-apple-black transition-colors">
-              Курсы
-            </a>
-            <a href="#about" className="text-apple-gray hover:text-apple-black transition-colors">
-              О школе
-            </a>
-            <a href="#contact" className="text-apple-gray hover:text-apple-black transition-colors">
-              Контакты
-            </a>
-            <a href="#courses" className="bg-apple-blue text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors">
-              Выбрать курс
-            </a>
-          </div>
-          
-          <div className="md:hidden">
-            <button className="text-apple-gray hover:text-apple-black">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-}
-</file>
-
 <file path="app/globals.css">
 @import "tailwindcss";
 
@@ -499,42 +712,42 @@ export default function Navbar() {
 // app/layout.js
 import Script from 'next/script';
 import "./globals.css";
+import Navbar from './components/shared/Navbar';
+import Footer from './components/shared/Footer';
 
 // Data for the JSON-LD script
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Вайб-кодинг с AI",
-  "description": "Практический интенсив по созданию сайтов и Telegram-ботов с помощью AI",
-  "provider": { "@type": "Person", "name": "Сережа Рис" },
-  "instructor": { "@type": "Person", "name": "Сережа Рис" },
-  "courseMode": "online",
-  "educationalLevel": "Beginner"
+  "@type": "Organization",
+  "name": "Школа Hashslash",
+  "description": "Обучаем современной разработке с использованием искусственного интеллекта",
+  "founder": { "@type": "Person", "name": "Сережа Рис" },
+  "url": "https://school.hsl.sh"
 };
 
 export const metadata = {
-  title: "Вайб-кодинг с AI: Создавай сайты и Telegram-ботов в чате с ИИ | Сережа Рис",
-  description: "Научись создавать сайты и Telegram-ботов через чат с AI. Практический интенсив от Сережи Риса для начинающих. Получи бесплатный гайд и начни кодить уже сегодня!",
-  keywords: ["AI", "вайб-кодинг", "создание сайтов", "telegram бот", "ChatGPT", "Claude", "веб-разработка", "без кода", "Сережа Рис", "интенсив", "обучение ИИ"],
+  title: "Школа Hashslash: Современная разработка с AI",
+  description: "Обучаем созданию сайтов и ботов с помощью AI. Курсы по вайб-кодингу и AI-инструментам от Сережи Риса.",
+  keywords: ["AI", "разработка", "обучение", "курсы", "веб-разработка", "Сережа Рис", "школа программирования"],
   author: [{ name: "Сережа Рис" }],
   robots: "index, follow",
   themeColor: "#0071e3",
-  appleWebApp: { capable: "yes", statusBarStyle: "default", title: "Вайб-кодинг с AI" },
+  appleWebApp: { capable: "yes", statusBarStyle: "default", title: "Школа Hashslash" },
   alternates: { canonical: "https://school.hsl.sh/" },
   openGraph: {
     type: "website",
     url: "https://school.hsl.sh/",
-    title: "Вайб-кодинг с AI: Создавай сайты и Telegram-ботов в чате с ИИ",
-    description: "Научись создавать сайты и Telegram-ботов через чат с AI. Практический интенсив от Сережи Риса для начинающих.",
+    title: "Школа Hashslash: Современная разработка с AI",
+    description: "Обучаем созданию сайтов и ботов с помощью AI. Курсы по вайб-кодингу и AI-инструментам от Сережи Риса.",
     images: [{ url: "https://school.hsl.sh/og-image.jpg", width: 1200, height: 630 }],
-    siteName: "Вайб-кодинг с AI",
+    siteName: "Школа Hashslash",
     locale: "ru_RU",
   },
   twitter: {
     card: "summary_large_image",
     url: "https://school.hsl.sh/",
-    title: "Вайб-кодинг с AI: Создавай сайты и Telegram-ботов в чате с ИИ",
-    description: "Научись создавать сайты и Telegram-ботов через чат с AI. Практический интенсив от Сережи Риса для начинающих.",
+    title: "Школа Hashslash: Современная разработка с AI",
+    description: "Обучаем созданию сайтов и ботов с помощью AI. Курсы по вайб-кодингу и AI-инструментам от Сережи Риса.",
     images: ["https://school.hsl.sh/og-image.jpg"],
     creator: "@r1iiis",
   },
@@ -550,7 +763,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="font-apple text-apple-black bg-white overflow-x-hidden">
-        {children}
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FMC7N45N42" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
@@ -562,27 +777,6 @@ export default function RootLayout({ children }) {
         </Script>
       </body>
     </html>
-  );
-}
-</file>
-
-<file path="app/page.js">
-// app/page.js
-import Navbar from './components/Navbar';
-import SchoolHero from './components/SchoolHero';
-import ProductCards from './components/ProductCards';
-import Footer from './components/Footer';
-
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <SchoolHero />
-        <ProductCards />
-      </main>
-      <Footer />
-    </>
   );
 }
 </file>
@@ -632,6 +826,21 @@ next-env.d.ts
 
 repomix-output/
 repomix-output.xmlrepomix-output.xml
+</file>
+
+<file path="app/page.js">
+// app/page.js
+import SchoolHero from './components/school/SchoolHero';
+import ProductCards from './components/school/ProductCards';
+
+export default function Home() {
+  return (
+    <>
+      <SchoolHero />
+      <ProductCards />
+    </>
+  );
+}
 </file>
 
 </files>
