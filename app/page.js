@@ -1,12 +1,7 @@
 // app/page.js
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import LeadMagnet from './components/LeadMagnet';
-import Testimonials from './components/Testimonials';
-import StudentProjects from './components/StudentProjects';
-import Program from './components/Program';
-import Pricing from './components/Pricing';
-import CTA from './components/CTA';
+import SchoolHero from './components/SchoolHero';
+import ProductCards from './components/ProductCards';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -14,13 +9,8 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <Hero />
-        <LeadMagnet />
-        <Testimonials />
-        <StudentProjects />
-        <Program />
-        <Pricing />
-        <CTA />
+        <SchoolHero />
+        <ProductCards />
       </main>
       <Footer />
     </>

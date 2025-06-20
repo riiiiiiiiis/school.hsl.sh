@@ -1,41 +1,63 @@
 export default function Footer() {
   return (
-    <footer className="bg-apple-light-gray py-16">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-10 mb-10">
-          <div>
-            <h5 className="text-sm font-semibold mb-4 text-apple-black">Вайб-кодинг с AI</h5>
-            <p className="text-apple-gray text-sm leading-relaxed">Создавай будущее веб-разработки вместе с нами. Изучай современные AI-инструменты и воплощай идеи в жизнь.</p>
+    <footer className="bg-apple-black text-white py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div className="md:col-span-2">
+            <h3 className="font-semibold text-2xl mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              Школа Hashslash
+            </h3>
+            <p className="text-apple-gray text-lg mb-6 max-w-md">
+              Обучаем современной разработке с использованием искусственного интеллекта. 
+              Практические курсы для новичков и профессионалов.
+            </p>
           </div>
+          
           <div>
-            <h5 className="text-sm font-semibold mb-4 text-apple-black">Навигация</h5>
-            <ul className="space-y-3">
-              <li><a href="#testimonials" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Отзывы</a></li>
-              <li><a href="#program" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Программа</a></li>
-              <li><a href="#pricing" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Тарифы</a></li>
-              <li><a href="#lead-magnet" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Бесплатный гайд</a></li>
+            <h4 className="font-semibold text-lg mb-4">Курсы</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://ai.hsl.sh" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  AI Tools
+                </a>
+              </li>
+              <li>
+                <a href="https://vibecoding.hsl.sh" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  Вайб-кодинг
+                </a>
+              </li>
             </ul>
           </div>
+          
           <div>
-            <h5 className="text-sm font-semibold mb-4 text-apple-black">Мои ресурсы</h5>
-            <ul className="space-y-3">
-              <li><a href="https://t.me/r1iiis" target="_blank" rel="noopener noreferrer" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Личный блог в Telegram</a></li>
-              <li><a href="https://t.me/hashslash_bot" target="_blank" rel="noopener noreferrer" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Бот для записи</a></li>
-              <li><a href="https://github.com/riiiiiiiiis" target="_blank" rel="noopener noreferrer" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">GitHub</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="text-sm font-semibold mb-4 text-apple-black">Правовая информация</h5>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Политика конфиденциальности</a></li>
-              <li><a href="#" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Пользовательское соглашение</a></li>
-              <li><a href="#" className="text-apple-gray text-sm hover:text-apple-blue transition-colors">Публичная оферта</a></li>
+            <h4 className="font-semibold text-lg mb-4">Контакты</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://t.me/hashslash" className="text-apple-gray hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  Telegram
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@hsl.sh" className="text-apple-gray hover:text-white transition-colors">
+                  Email
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <div className="pt-10 border-t border-gray-200 text-center">
-          <p className="text-apple-gray text-sm">© 2025 Вайб-кодинг с AI. Все права защищены.<br />
-          Сделано с ❤️ для сообщества разработчиков</p>
+        
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-apple-gray text-sm">
+            © 2024 Школа Hashslash. Все права защищены.
+          </p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="/privacy" className="text-apple-gray hover:text-white text-sm transition-colors">
+              Политика конфиденциальности
+            </a>
+            <a href="/terms" className="text-apple-gray hover:text-white text-sm transition-colors">
+              Условия использования
+            </a>
+          </div>
         </div>
       </div>
     </footer>
