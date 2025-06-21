@@ -1,9 +1,9 @@
 export const courses = [
   {
-    title: "ИИ-Арсенал",
-    subtitle: "Твой стартовый набор для работы с нейросетями",
+    title: "Подробности скоро",
+    subtitle: "Скоро откроем доступ",
     description: "Научим на практике, как ChatGPT, n8n и Perplexity увеличивают продуктивность в 10 раз.",
-    href: "/ai",
+    href: "", // временно без ссылки
     color: "from-purple-600 to-blue-600",
     features: [
       "Применять AI для реальных задач",

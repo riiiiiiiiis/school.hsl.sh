@@ -3,16 +3,16 @@ import ProgramSection from '../components/vibecoding/ProgramSection';
 import Instructor from '../components/Instructor';
 
 export const metadata = {
-  title: "Вайб-кодинг с AI: Создавай сайты и Telegram-ботов в чате с ИИ | Сережа Рис",
-  description: "Научись создавать сайты и Telegram-ботов через чат с AI. Практический интенсив от Сережи Риса для начинающих. Получи бесплатный гайд и начни кодить уже сегодня!",
+  title: "Вайб-кодинг: Твой AI пишет код за тебя | Школа Hashslash",
+  description: "От идеи до работающего сайта с помощью нейросети. Интенсив от Серёжи Риса, где ты научишься ставить задачи AI, а не писать код руками.",
   keywords: ["AI", "вайб-кодинг", "создание сайтов", "telegram бот", "ChatGPT", "Claude", "веб-разработка", "без кода", "Сережа Рис", "интенсив", "обучение ИИ"],
   author: [{ name: "Сережа Рис" }],
   robots: "index, follow",
   themeColor: "#0071e3",
   openGraph: {
     type: "website",
-    title: "Вайб-кодинг с AI: Создавай сайты и Telegram-ботов в чате с ИИ",
-    description: "Научись создавать сайты и Telegram-ботов через чат с AI. Практический интенсив от Сережи Риса для начинающих.",
+    title: "Вайб-кодинг: Твой AI пишет код за тебя | Школа Hashslash",
+    description: "От идеи до работающего сайта с помощью нейросети. Интенсив от Серёжи Риса, где ты научишься ставить задачи AI, а не писать код руками.",
   },
 };
 
@@ -22,21 +22,21 @@ export default function VibeCodingPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 text-center bg-gradient-to-b from-white to-apple-light-gray">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-6xl md:text-7xl font-semibold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent leading-tight">Вайб-кодинг с AI</h1>
-          <p className="text-2xl md:text-3xl text-apple-gray mb-10 leading-relaxed max-w-3xl mx-auto">Создавай сайты и Telegram-ботов в чате с нейросетью. Даже если никогда не писал код!</p>
+          <h1 className="text-6xl md:text-7xl font-semibold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent leading-tight">Вайб-кодинг</h1>
+          <p className="text-2xl md:text-3xl text-apple-gray mb-10 leading-relaxed max-w-3xl mx-auto">Забудь всё, что ты знал о программировании. Теперь твой главный скилл — общение с AI. Научим, как превращать слова в работающий код.</p>
         </div>
       </section>
 
       {/* VibeCoding Intro */}
       <section id="intro" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-semibold mb-6">Что такое вайб-кодинг?</h2>
+          <h2 className="text-5xl font-semibold mb-6">Что ещё за вайб-кодинг?</h2>
           <p className="text-xl text-apple-gray mb-8 max-w-3xl mx-auto leading-relaxed">
-            Это революционный подход к разработке, где вы управляете искусственным интеллектом как дирижер оркестром. Вместо написания каждой строчки кода, вы формулируете идеи и задачи, а AI воплощает их в жизнь. Это не замена разработчика, а его усиление, позволяющее создавать сложные проекты быстрее и с большим удовольствием.
+            Это когда ты — арт-директор, а нейросеть — твой личный джун-разработчик 24/7. Ты ставишь задачи на понятном языке, а AI пишет код, собирает сайты и запускает ботов. Это не про «не кодить», это про «кодить головой, а не руками».
           </p>
           <div className="bg-apple-light-gray rounded-2xl p-6 text-left max-w-2xl mx-auto">
-              <p className="font-semibold text-apple-black mb-2">Пример успеха из индустрии:</p>
-              <p className="text-apple-gray mb-3">Стартап Vibe Coder Base44, основанный одним человеком, был продан Wix за $80 млн всего через 6 месяцев после запуска. Это доказывает невероятный потенциал подхода.</p>
+              <p className="font-semibold text-apple-black mb-2">Это не теория. Это деньги.</p>
+              <p className="text-apple-gray mb-3">Стартап Vibe Coder Base44, построенный одним (!) человеком за 6 месяцев на этом подходе, был продан Wix за $80 млн. Основатель просто правильно общался с AI. Хочешь так же?</p>
               <a 
                 href="https://techcrunch.com/2025/06/18/6-month-old-solo-owned-vibe-coder-base44-sells-to-wix-for-80m-cash/" 
                 target="_blank" 
@@ -55,9 +55,9 @@ export default function VibeCodingPage() {
       {/* Lead Magnet */}
       <section id="lead-magnet" className="py-20 bg-gradient-to-b from-apple-light-gray to-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-semibold mb-6">Начни вайб-кодить за 15 минут!</h2>
+          <h2 className="text-5xl font-semibold mb-6">Хватит читать, пора делать.</h2>
           <p className="text-xl text-apple-gray mb-8 max-w-2xl mx-auto">
-            Скачай бесплатный гайд и создай свой первый сайт с помощью AI уже сегодня. 
+            Забирай наш стартер-пак: гайд, который за 15 минут проведёт тебя от нуля до твоего первого сайта на AI. Без регистраций и смс, только чистый вайб. 
             Никаких сложных настроек — только практика и результат.
           </p>
           <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 max-w-md mx-auto">
@@ -69,7 +69,7 @@ export default function VibeCodingPage() {
               href="#pricing" 
               className="block w-full py-4 bg-apple-blue text-white rounded-xl text-lg font-medium hover:bg-blue-600 transition-all hover:-translate-y-1 shadow-lg hover:shadow-xl"
             >
-              Получить бесплатно
+              Забрать гайд
             </a>
           </div>
         </div>
@@ -78,14 +78,14 @@ export default function VibeCodingPage() {
       {/* Course Projects */}
       <section className="py-20 bg-apple-light-gray">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-center text-5xl font-semibold mb-16">Проекты, которые вы создадите на курсе</h2>
+          <h2 className="text-center text-5xl font-semibold mb-16">Твоё новое портфолио после курса</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-3xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-lg">
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl h-48 mb-6 flex items-center justify-center">
                 <span className="text-4xl">🏪</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Интернет-магазин одежды</h3>
+              <h3 className="text-xl font-semibold mb-3">Запустишь свой e-com проект</h3>
               <p className="text-apple-gray mb-4">Полноценный e-commerce с корзиной, каталогом товаров и интеграцией с платежами.</p>
               <div className="flex items-center gap-2">
                 <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">React</span>
@@ -97,7 +97,7 @@ export default function VibeCodingPage() {
               <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl h-48 mb-6 flex items-center justify-center">
                 <span className="text-4xl">🤖</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Telegram-бот для записи</h3>
+              <h3 className="text-xl font-semibold mb-3">Соберёшь умного телеграм-бота</h3>
               <p className="text-apple-gray mb-4">Автоматизированная система записи клиентов с календарем и напоминаниями.</p>
               <div className="flex items-center gap-2">
                 <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Python</span>
@@ -109,7 +109,7 @@ export default function VibeCodingPage() {
               <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl h-48 mb-6 flex items-center justify-center">
                 <span className="text-4xl">📱</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Портфолио-сайт</h3>
+              <h3 className="text-xl font-semibold mb-3">Сверстаешь дерзкий сайт-портфолио</h3>
               <p className="text-apple-gray mb-4">Современный адаптивный сайт-портфолио с анимациями и контактной формой.</p>
               <div className="flex items-center gap-2">
                 <span className="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm">Next.js</span>
@@ -123,13 +123,13 @@ export default function VibeCodingPage() {
       {/* Testimonials */}
       <section id="testimonials" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-center text-5xl font-semibold mb-16">Что говорят вайб-кодеры</h2>
+          <h2 className="text-center text-5xl font-semibold mb-16">Голос наших вайб-кодеров</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-apple-light-gray rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300">
               <div className="mb-6">
                 <p className="text-apple-gray leading-relaxed mb-4">
-                  "За неделю создал свой первый лендинг и Telegram-бота! Раньше думал, что программирование — это слишком сложно."
+                  "Я думал, кодинг — это для гиков в свитерах. Оказалось, можно просто говорить с компом, и он всё делает. Собрал лендос и бота за выходные."
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -146,7 +146,7 @@ export default function VibeCodingPage() {
             <div className="bg-apple-light-gray rounded-3xl p-8 hover:-translate-y-2 transition-all duration-300">
               <div className="mb-6">
                 <p className="text-apple-gray leading-relaxed mb-4">
-                  "Сережа объясняет так просто! Теперь я могу создавать прототипы для своих дизайнов без помощи разработчиков."
+                  "Теперь мне не нужен разраб, чтобы проверить гипотезу. Серёжа показал, как делать рабочие прототипы самой. Это свобода."
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -193,7 +193,7 @@ export default function VibeCodingPage() {
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl h-48 mb-6 flex items-center justify-center">
                 <span className="text-4xl">🏪</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Интернет-магазин одежды</h3>
+              <h3 className="text-xl font-semibold mb-3">Запустишь свой e-com проект</h3>
               <p className="text-apple-gray mb-4">Полноценный e-commerce с корзиной, каталогом товаров и интеграцией с платежами.</p>
               <div className="flex items-center gap-2">
                 <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">React</span>
@@ -205,7 +205,7 @@ export default function VibeCodingPage() {
               <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl h-48 mb-6 flex items-center justify-center">
                 <span className="text-4xl">🤖</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Telegram-бот для записи</h3>
+              <h3 className="text-xl font-semibold mb-3">Соберёшь умного телеграм-бота</h3>
               <p className="text-apple-gray mb-4">Автоматизированная система записи клиентов с календарем и напоминаниями.</p>
               <div className="flex items-center gap-2">
                 <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Python</span>
@@ -217,7 +217,7 @@ export default function VibeCodingPage() {
               <div className="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl h-48 mb-6 flex items-center justify-center">
                 <span className="text-4xl">📱</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Портфолио-сайт</h3>
+              <h3 className="text-xl font-semibold mb-3">Сверстаешь дерзкий сайт-портфолио</h3>
               <p className="text-apple-gray mb-4">Современный адаптивный сайт-портфолио с анимациями и контактной формой.</p>
               <div className="flex items-center gap-2">
                 <span className="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm">Next.js</span>
@@ -239,12 +239,12 @@ export default function VibeCodingPage() {
       <section id="pricing" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-center text-apple-gray text-xl mb-2">Тарифы</p>
-          <h2 className="text-center text-5xl font-semibold mb-16">Выберите подходящий пакет</h2>
+          <h2 className="text-center text-5xl font-semibold mb-16">Выбери свой уровень погружения</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
-            {/* Самостоятельный */}
+            {/* Наблюдатель */}
             <div className="bg-apple-light-gray/60 rounded-3xl p-8 text-center hover:scale-105 transition-transform duration-300 border border-gray-100">
-              <h3 className="text-2xl font-semibold mb-3 text-apple-black">Самостоятельный</h3>
-              <p className="text-apple-gray mb-8 h-12">Доступ к лекциям и общему чату</p>
+              <h3 className="text-2xl font-semibold mb-3 text-apple-black">Наблюдатель</h3>
+              <p className="text-apple-gray mb-8 h-12">Для тех, кто любит подсматривать. Доступ к материалам и общему котлу.</p>
               <div className="text-5xl font-bold mb-8 text-apple-black">2 990₽</div>
               <ul className="text-left my-8 space-y-3">
                 <li className="flex items-center text-apple-black"><span className="text-green-500 mr-3">✓</span>Записи всех лекций</li>
@@ -254,28 +254,28 @@ export default function VibeCodingPage() {
               <a href="https://t.me/hashslash_bot" target="_blank" className="w-full block py-3 bg-white border border-apple-blue text-apple-blue rounded-xl text-lg font-medium hover:bg-apple-blue hover:text-white transition-all duration-200">Выбрать</a>
             </div>
             
-            {/* Стандартный (Popular) */}
+            {/* Игрок (Popular) */}
             <div className="bg-apple-black rounded-3xl p-8 text-center text-white relative shadow-2xl scale-105">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium">Популярный</div>
-              <h3 className="text-2xl font-semibold mb-3">Стандартный</h3>
-              <p className="text-white/70 mb-8 h-12">С моей поддержкой и разбором проектов в мини-группе</p>
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium"></div>
+              <h3 className="text-2xl font-semibold mb-3">Игрок</h3>
+              <p className="text-white/70 mb-8 h-12">Для тех, кто пришел за результатом. Личный фидбэк и разборы от Серёжи.</p>
               <div className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">12 000₽</div>
               <ul className="text-left my-8 space-y-3">
-                <li className="flex items-center"><span className="text-green-400 mr-3">✓</span><strong>Всё из тарифа "Самостоятельный"</strong></li>
+                <li className="flex items-center"><span className="text-green-400 mr-3">✓</span><strong>Всё из тарифа "Наблюдатель"</strong></li>
                 <li className="flex items-center"><span className="text-green-400 mr-3">✓</span>Моя личная поддержка в чате</li>
                 <li className="flex items-center"><span className="text-green-400 mr-3">✓</span>Разбор ваших проектов в группе</li>
                 <li className="flex items-center"><span className="text-green-400 mr-3">✓</span>Дополнительные мастер-классы</li>
               </ul>
-              <a href="https://t.me/hashslash_bot" target="_blank" className="w-full block py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl text-lg font-medium hover:scale-105 transition-transform duration-200">Выбрать стандартный</a>
+              <a href="https://t.me/hashslash_bot" target="_blank" className="w-full block py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl text-lg font-medium hover:scale-105 transition-transform duration-200">Выбрать Игрок</a>
             </div>
             
-            {/* VIP */}
+            {/* Персональный квест */}
             <div className="bg-apple-light-gray/60 rounded-3xl p-8 text-center hover:scale-105 transition-transform duration-300 border border-gray-100">
-              <h3 className="text-2xl font-semibold mb-3 text-apple-black">VIP</h3>
-              <p className="text-apple-gray mb-8 h-12">Личные созвоны и консультации</p>
+              <h3 className="text-2xl font-semibold mb-3 text-apple-black">Персональный квест</h3>
+              <p className="text-apple-gray mb-8 h-12">Разберём твой проект один на один. Доведём до запуска.</p>
               <div className="text-5xl font-bold mb-8 text-apple-black">24 000₽</div>
               <ul className="text-left my-8 space-y-3">
-                <li className="flex items-center text-apple-black"><span className="text-green-500 mr-3">✓</span><strong>Всё из тарифа "Стандартный"</strong></li>
+                <li className="flex items-center text-apple-black"><span className="text-green-500 mr-3">✓</span><strong>Всё из тарифа "Игрок"</strong></li>
                 <li className="flex items-center text-apple-black"><span className="text-green-500 mr-3">✓</span>Личные созвоны со мной (2 шт)</li>
                 <li className="flex items-center text-apple-black"><span className="text-green-500 mr-3">✓</span>Индивидуальные консультации</li>
                 <li className="flex items-center text-apple-black"><span className="text-green-500 mr-3">✓</span>Помощь в реализации вашего проекта</li>
@@ -295,10 +295,9 @@ export default function VibeCodingPage() {
         </div>
         
         <div className="max-w-3xl mx-auto px-6 relative z-10">
-          <h2 className="text-5xl md:text-6xl font-semibold mb-6">Начни создавать с AI уже сегодня</h2>
+          <h2 className="text-5xl md:text-6xl font-semibold mb-6">Будущее уже здесь. А ты?</h2>
           <p className="text-xl md:text-2xl mb-12 opacity-90 leading-relaxed">
-            Тысячи людей уже изменили свою жизнь с помощью вайб-кодинга. 
-            Присоединяйся к революции в разработке и создавай проекты мечты с помощью искусственного интеллекта.
+            Пока другие учат синтаксис, наши студенты уже запускают проекты. Вайб-кодинг — это новый стандарт, и первый вагон скоро уйдёт. Запрыгнешь?
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
@@ -308,7 +307,7 @@ export default function VibeCodingPage() {
               rel="noopener noreferrer" 
               className="bg-white text-apple-blue px-8 py-4 rounded-2xl text-lg font-semibold hover:-translate-y-1 transition-all hover:shadow-2xl hover:shadow-white/25"
             >
-              Записаться на интенсив
+              Занять место
             </a>
             <a 
               href="#lead-magnet" 
@@ -319,14 +318,14 @@ export default function VibeCodingPage() {
           </div>
           
           <div className="text-center">
-            <p className="text-lg opacity-75 mb-4">Есть вопросы?</p>
+            <p className="text-lg opacity-75 mb-4">Остались вопросы? Нужны детали?</p>
             <a 
               href="https://t.me/r1iiis" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-xl font-semibold hover:underline transition-all"
             >
-              Напиши мне в Telegram @r1iiis
+              Пиши напрямую в телегу: @r1iiis
             </a>
           </div>
         </div>

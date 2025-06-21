@@ -48,12 +48,20 @@ export default function ProductCards() {
                 </div>
               </div>
               
-              <a
-                href={course.href}
-                className="block w-full text-center bg-apple-blue text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all hover:-translate-y-1 shadow-lg hover:shadow-xl"
-              >
-                Подробнее о курсе
-              </a>
+              {course.href ? (
+                <a
+                  href={course.href}
+                  className="block w-full text-center bg-apple-blue text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                >
+                  Подробнее о курсе
+                </a>
+              ) : (
+                <span
+                  className="block w-full text-center bg-gray-300 text-apple-gray px-6 py-3 rounded-full cursor-not-allowed"
+                >
+                  Подробности скоро
+                </span>
+              )}
             </div>
           ))}
         </div>
